@@ -1,1 +1,13 @@
 <p>employee works!</p>
+<!-- Child: <input type="text" #Ccomponent (keyup)="sendData(Ccomponent.value)"> -->
+ <h3>Name: {{emp.name}}</h3>
+ <h3>Email: {{emp.email}}</h3>
+ <h3>Contact: {{emp.contact}}</h3>
+
+ @for(emp of books; track emp.title; let i=$index, e=$even){
+    <ul>
+        <li>{{emp.author}} - {{emp.price}}</li>
+    </ul>
+    }@empty {
+    <p>No data</p>
+    }
