@@ -1,0 +1,16 @@
+<h2>TemplateDriven form</h2>
+
+<div>
+    <form #templateForm="ngForm" (ngSubmit)="register(templateForm)">
+        <div>
+            Name: <input type="text" placeholder="Name" name="name" required minlength="5" [(ngModel)]="name" #fname="ngModel">
+            <span *ngIf="fname.touched&& !fname.valid">required</span>
+        </div>
+        <div>
+            Email ID: <input type="text" placeholder="Email" name="email" ngModel #email="ngModel">
+        </div>
+        <div>
+            <button [disabled]="!templateForm.valid" type="submit">Save</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+<h3>Please Login</h3>
+
+<!-- <table border="1">
+    <tr>
+        <td>User Id: </td>
+        <td>
+            <input type="text" #userId>
+        </td>
+    </tr>
+    <tr>
+        <td>Password: </td>
+        <td>
+            <input type="text" #userPssword>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="login(userId.value, userPssword.value)">Login</button>
+        </td>
+        <td>
+            <button>Cancel</button>
+        </td>
+    </tr>
+</table> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <label for="userId">User Id: </label>
+            <div class="col-md-4">
+                <input name="userId" type="text" #userId>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="password">Password: </label>
+            <div class="col-md-4">
+                <input name="password" type="text" #userPssword>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <button (click)="login(userId.value, userPssword.value)">Login</button> <button>Cancel</button>
+        </div>
+    </div>
+</div>

@@ -10,3 +10,8 @@ export class item{
         name:''
     }
 }
+
+export interface demo{
+    name:string,
+    numner:number
+}

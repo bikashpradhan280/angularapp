@@ -1,3 +1,66 @@
 <h1>App Component</h1>
 
 <!-- <app-employee></app-employee> -->
+<!-- 
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tbody>
+        @for (item of employees; track item.id; let i = $index) {
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+        </tr>
+        } @empty {
+            <td [attr.colspan]="test">No data</td>
+        }
+    </tbody>
+</table> -->
+
+<!-- <button style="background-color: red;"  on-click="get1(); get2()">Click</button>
+<br>
+<button [style.background-color]="orange" [class]="class1">Check</button> -->
+
+<!-- <input type="text" #inputValue (keydown)="get1($event)" (keyup)="get2(inputValue.value)"> -->
+
+<!-- <input type="text" [(ngModel)]="message">
+{{message | slice :2:90}}
+<button (click)="ccheck()">{{'check' | uppercase}}</button> -->
+
+<!-- <h5>{{12.45678 | currency :curren}}</h5>
+<h5>{{123.45678 | number:'2.2-2' | currency:curren}}</h5>
+
+<h3>{{2.5 | percent : '2.2'}}</h3> -->
+
+<!-- <h3>{{currentDate}}</h3>
+<h3>{{currentDate | date}}</h3>
+<h3>{{currentDate | date :'shortDate'}}</h3>
+<h3>{{currentDate | date :'longDate'}}</h3> -->
+<!-- <h3>{{currentDate | date :'dd:mm:yy'}}</h3>
+<h3>{{currentDate | date :'dd-mm-yy'}}</h3> -->
+<!-- <h3>{{currentDate | date :'mm:dd:yy'}}</h3> -->
+
+
+<!-- <h3>{{message}}</h3>
+<h3>{{message | welcome}}</h3> -->
+
+
+<div>
+    <a routerLink="login" routerLinkActive="active">Login</a>
+    <a routerLink="home" routerLinkActive="active">Home</a>
+    <a routerLink="aboutUs" routerLinkActive="active">About Us</a>
+    <a routerLink="employee" routerLinkActive="active">Employee</a>
+    <a routerLink="template" routerLinkActive="active">Template Driven Form</a>
+    <!-- <a routerLink="employeeNew">Employee New</a> -->
+    <a routerLink="student" routerLinkActive="active">Student</a>
+</div>
+
+<router-outlet></router-outlet>
+<!-- <router-outlet name="outlet2"></router-outlet> -->
+
+

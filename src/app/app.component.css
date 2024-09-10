@@ -1,4 +1,16 @@
-h1{
+h1 {
     color: red;
     text-align: center;
+}
+
+.one {
+    color: red;
+}
+
+.two {
+    color: yellow;
+}
+
+.three {
+    font-size: 40px;
 }

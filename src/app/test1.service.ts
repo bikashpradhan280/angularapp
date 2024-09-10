@@ -3,11 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class MessageService {
-  testValue:number=2;
+export class Test1Service {
+
   constructor() { }
 
-  getMessage(value:any){
-    return value+ 'Bikash 811'
+  get1(){
+    return 'vvv v'
   }
 }
